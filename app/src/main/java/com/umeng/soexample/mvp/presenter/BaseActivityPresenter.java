@@ -28,4 +28,11 @@ public abstract class BaseActivityPresenter<T extends AppDelage> extends AppComp
         daleagt.getContext(this);
         daleagt.initData();
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        daleagt.destry();
+        daleagt=null;
+    }
 }

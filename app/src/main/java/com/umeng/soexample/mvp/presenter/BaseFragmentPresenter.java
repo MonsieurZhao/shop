@@ -30,4 +30,11 @@ public abstract class BaseFragmentPresenter<T extends AppDelage> extends Fragmen
         daleagt.initData();
         return daleagt.view();
     }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        daleagt.destry();
+        daleagt=null;
+    }
 }

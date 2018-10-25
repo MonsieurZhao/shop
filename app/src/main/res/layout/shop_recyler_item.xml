@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:src="@drawable/cricle_no"
+        android:id="@+id/iv_img1_recyler_shop"
+        android:layout_gravity="center_vertical"/>
+
+    <ImageView
+        android:layout_width="@dimen/dp_120"
+        android:layout_height="@dimen/dp_120"
+        android:src="@mipmap/ic_launcher"
+        android:layout_margin="@dimen/dp_5"
+        android:id="@+id/iv_img2_recyler_shop"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dp_5"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_20"
+            android:text="标题"
+            android:lines="3"
+            android:ellipsize="end"
+            android:id="@+id/tv_title_recyler_shop"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_10">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_price_recyler_shop"
+                android:text="￥：00.00"
+                android:textSize="@dimen/sp_20"
+                android:layout_gravity="center"/>
+            <com.umeng.soexample.activity.ShopNum
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:textSize="@dimen/sp_20"
+                android:id="@+id/tv_num_recyler_shop"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

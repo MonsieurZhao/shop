@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_margin="@dimen/dp_5"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/sp_20"
+            android:text="账号："
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="请输入账号"
+            android:background="@drawable/home_bg"
+            android:paddingLeft="@dimen/dp_10"
+            android:id="@+id/et_name_insert"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:layout_margin="@dimen/dp_5"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/sp_20"
+            android:text="密码："
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:hint="请输入密码"
+            android:background="@drawable/home_bg"
+            android:paddingLeft="@dimen/dp_10"
+            android:inputType="textPassword"
+            android:id="@+id/et_pass_insert"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:id="@+id/bt_insert_insert"
+        android:background="@color/colorAccent"
+        android:textColor="@color/colorffffff"
+        android:text="注册"
+        android:textSize="@dimen/sp_20"/>
+
+
+</LinearLayout>

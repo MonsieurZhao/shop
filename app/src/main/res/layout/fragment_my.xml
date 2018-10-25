@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="@dimen/dp_200">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher"
+            android:layout_above="@id/tv_name_my"
+            android:layout_marginBottom="@dimen/dp_5"
+            android:id="@+id/iv_img_my"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_name_my"
+            android:text="请先登录"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/colorffffff"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="@dimen/dp_10"/>
+    </RelativeLayout>
+</LinearLayout>
